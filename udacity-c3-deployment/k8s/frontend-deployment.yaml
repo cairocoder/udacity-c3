@@ -16,7 +16,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: skn2093/udacity-udagram-frontend
+      - image: cairocoder/udacity-udagram-frontend
         name: frontend
         imagePullPolicy: Always          
         ports:

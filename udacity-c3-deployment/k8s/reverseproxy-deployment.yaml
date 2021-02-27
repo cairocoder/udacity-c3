@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: skn2093/reverseproxy
+      - image: cairocoder/reverseproxy
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

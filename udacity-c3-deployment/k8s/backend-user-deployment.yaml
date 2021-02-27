@@ -15,7 +15,7 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: skn2093/udacity-udagram-restapi-user
+      - image: cairocoder/udacity-udagram-restapi-user
         name: backend-user 
         imagePullPolicy: Always  
         resources:

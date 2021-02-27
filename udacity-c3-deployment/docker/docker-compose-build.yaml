@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: .
-    image: skn2093/reverseproxy 
+    image: cairocoder/reverseproxy 
   backend_user:
     build:
       context: ../../udacity-c3-restapi-user
-    image: skn2093/udacity-udagram-restapi-user
+    image: cairocoder/udacity-udagram-restapi-user
   backend_feed:
     build:
       context: ../../udacity-c3-restapi-feed  
-    image: skn2093/udacity-udagram-restapi-feed
+    image: cairocoder/udacity-udagram-restapi-feed
   frontend:
     build:
       context: ../../udacity-c3-frontend  
-    image: skn2093/udacity-udagram-frontend
+    image: cairocoder/udacity-udagram-frontend
