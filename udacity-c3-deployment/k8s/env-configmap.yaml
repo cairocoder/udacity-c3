@@ -1,12 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: udagram-photo-bucket
+  AWS_BUCKET: cairocoder-udacity-p3
   AWS_PROFILE: default
-  AWS_REGION: us-east-1
-  JWT_SECRET: dtWZecjYjgJ5e9kYwxOQbDCH3v0zZQdvCg
-  POSTGRESS_DB: cars
-  POSTGRESS_HOST: cars.cdqgi9bomss5.us-east-1.rds.amazonaws.com
+  AWS_REGION: us-west-2
+  JWT_SECRET: cairocoder
+  POSTGRESS_DB: db3new
+  POSTGRESS_DATABASE: db3new
+  POSTGRESS_HOST: db3new.cx0rp0orrjcm.us-west-2.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
   name: env-config

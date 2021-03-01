@@ -17,7 +17,7 @@ spec:
       containers:
       - image: cairocoder/udacity-udagram-restapi-user
         name: backend-user 
-        imagePullPolicy: Always  
+        imagePullPolicy: Never  
         resources:
           requests:
             memory: "64Mi"

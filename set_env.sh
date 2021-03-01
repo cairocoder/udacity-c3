@@ -8,4 +8,6 @@ export AWS_BUCKET=cairocoder-udacity-p3
 export AWS_REGION=us-west-2
 export AWS_PROFILE=default
 export JWT_SECRET=cairocoder
-export URL=http://localhost:8080
+export AWS_ACCESS_KEY_ID
+export AWS_SECRET_ACCESS_KEY
+export URL=http://localhost:8100

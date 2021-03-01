@@ -5,7 +5,7 @@ metadata:
     service: backend-feed
   name: backend-feed
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       service: backend-feed
@@ -17,7 +17,7 @@ spec:
       containers:
       - image: cairocoder/udacity-udagram-restapi-feed
         name: backend-feed
-        imagePullPolicy: Always  
+        imagePullPolicy: Never  
         resources:
           requests:
             memory: "64Mi"
