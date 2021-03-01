@@ -8,10 +8,10 @@ COPY package*.json /usr/src/app/
 RUN npm ci
 
 #Solve the problem reinstaling bcrypt
-RUN npm uninstall bcrypt
-RUN npm i bcrypt
-RUN npm uninstall node-sass
-RUN npm install node-sass
+# RUN npm uninstall bcrypt
+# RUN npm i bcrypt
+# RUN npm uninstall node-sass
+# RUN npm install node-sass@4.14.1
 
 # Bundle app source
 COPY . .
