@@ -1,7 +1,7 @@
 # Build Files
 */node_modules/*
 */www/*
-*/udacity-c3-deployement/k8s/aws-secret.yaml
+aws-secret.yaml
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
