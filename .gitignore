@@ -1,7 +1,6 @@
 # Build Files
 */node_modules/*
 */www/*
-aws-secret.yaml
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

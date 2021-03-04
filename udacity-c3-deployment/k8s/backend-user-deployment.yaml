@@ -5,7 +5,7 @@ metadata:
     service: backend-user
   name: backend-user
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       service: backend-user
@@ -17,7 +17,7 @@ spec:
       containers:
       - image: cairocoder/udacity-udagram-restapi-user
         name: backend-user 
-        imagePullPolicy: Never  
+        imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"

@@ -1,18 +1,14 @@
 ## Build
-FROM beevelop/ionic AS ionic
-# Create the application directory
-WORKDIR /usr/src/app
-# Install the application dependencies
-# We can use wildcard to ensure both package.json AND package-lock.json are considered
-# where available (npm@5+)
-COPY package*.json /usr/src/app/
-RUN npm ci
+FROM beevelop/ionic:latest AS ionic
 
-#Solve the problem reinstaling bcrypt
-# RUN npm uninstall bcrypt
-# RUN npm i bcrypt
-# RUN npm uninstall node-sass
-# RUN npm install node-sass@4.14.1
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
+RUN npm ci
 
 # Bundle app source
 COPY . .
@@ -20,5 +16,6 @@ RUN ionic build
 
 ## Run 
 FROM nginx:alpine
+
 #COPY www /usr/share/nginx/html
-COPY --from=ionic /usr/src/app/www /usr/share/nginx/html
+COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
