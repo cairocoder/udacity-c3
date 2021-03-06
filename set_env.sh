@@ -10,4 +10,4 @@ export AWS_PROFILE=default
 export JWT_SECRET=cairocoder
 export AWS_ACCESS_KEY_ID
 export AWS_SECRET_ACCESS_KEY
-export URL=http://localhost:8100
+export URL=http://a6c914fc2ce02440abc7dbd09e41cafe-1430416262.us-west-2.elb.amazonaws.com:8100

@@ -19,7 +19,7 @@ services:
       AWS_PROFILE: $AWS_PROFILE
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: "http://a6c914fc2ce02440abc7dbd09e41cafe-1430416262.us-west-2.elb.amazonaws.com:8100"
   backend-feed:
     image: cairocoder/udacity-udagram-restapi-feed
     volumes:
@@ -33,7 +33,7 @@ services:
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: "http://a6c914fc2ce02440abc7dbd09e41cafe-1430416262.us-west-2.elb.amazonaws.com:8100"
   frontend:
     image: cairocoder/udacity-udagram-frontend
     ports:
